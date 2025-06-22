@@ -1,0 +1,63 @@
+/* General Selectors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Header */
+
+header {
+    font-family: "Roboto", sans-serif;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid salmon;
+    padding: 1em 1.4em;
+}
+
+header a {
+    color: #0E0E0E;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.05s;
+}
+
+header a:hover,
+header a:active {
+    color: #252525;
+    transform: scale(1.02);
+}
+
+header a:active {
+    transform: scale(1.06);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.logo-img {
+    width: 1.50em;
+    height: 1.50em;
+}
+
+.header-list {
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
