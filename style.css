@@ -98,6 +98,57 @@ main {
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
 }
 
+/* Hero blog.html */
+.blog-page-edit,
+.hero-desc-title,
+.hero-desc {
+    color: #151515;
+}
+
+.blog-page-edit {
+    background-image: none;
+}
+
+
+
+.blog-page-edit:hover {
+    filter: none;
+    transform: none;
+    cursor: auto;
+}
+
+.hero-blog-image {
+    margin: 1.5em 0;
+    border-radius: 0.1875em;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hero-desc-title,
+.hero-desc {
+    margin-bottom: 0.8em;
+    font-size: 1rem;
+}
+
+.hero-desc {
+    font-weight: 400;
+}
+
+.hero-desc-title:nth-of-type(2) {
+    margin-top: 1em;
+}
+
+.recent-posts {
+    margin-top: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* End Hero blog.html */
+
 .hero-date {
     font-size: 0.75rem;
 }
@@ -119,7 +170,7 @@ main {
 .blog-container:hover {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10), 0 1.5px 6px rgba(0, 0, 0, 0.08);
     transform: translateY(-6px) scale(1.02);
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid #151515;
     background: #fafbfc;
     cursor: pointer;
 }
@@ -188,7 +239,23 @@ main {
     cursor: pointer;
 }
 
+/* view more blog.html hidden */
+
+.blog-hidden {
+    display: none;
+}
+
+/* end */
+
 /* Footer */
+
+/* add margin blog.html */
+
+.blog-margin {
+    margin-top: 3.5em;
+}
+
+/* end */
 
 footer {
     display: flex;
