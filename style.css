@@ -78,13 +78,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* background-image: url(/images/blog-image-hero.png); */
+    background-image: url(/images/blog-image-hero.png);
     background-size: cover;
     background-position: center;
-    color: #151515;
+    color: white;
     gap: 0.5em;
     padding: 1.5em;
-    /* min-height: 293px; */
+    min-height: 293px;
     transition: filter 0.2s, transform 0.2s;
 }
 
