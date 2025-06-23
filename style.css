@@ -10,6 +10,10 @@ body {
     font-family: "Source Sans 3", sans-serif;
 }
 
+.remove-deco {
+    text-decoration: none;
+}
+
 /* Header */
 
 header {
@@ -74,13 +78,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url(/images/blog-image-hero.png);
+    /* background-image: url(/images/blog-image-hero.png); */
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #151515;
     gap: 0.5em;
     padding: 1.5em;
-    min-height: 293px;
+    /* min-height: 293px; */
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.hero-blog:hover {
+    filter: brightness(1.08);
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 .hero-blog * {
@@ -97,6 +108,21 @@ main {
 }
 
 /* Main Blog */
+
+.blog-container {
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease,
+        border-bottom 0.2s;
+}
+
+.blog-container:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10), 0 1.5px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px) scale(1.02);
+    border-bottom: 2px solid grey;
+    background: #fafbfc;
+    cursor: pointer;
+}
 
 .blog-image {
     width: 100%;
@@ -153,9 +179,12 @@ main {
     text-decoration: underline;
     color: black;
     font-weight: bold;
+    transition: filter 0.1s, transform 0.1s;
 }
 
 .view-more-btn:hover {
+    /* filter: brightness(1.08); */
+    transform: scale(1.01);
     cursor: pointer;
 }
 
