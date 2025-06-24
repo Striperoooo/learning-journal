@@ -158,6 +158,29 @@ main {
     line-height: 1;
 }
 
+/* aboutme.html edit */
+
+.aboutme-photo {
+    width: 100%;
+    max-width: 182px;
+    max-height: 182px;
+    display: block;
+    margin-bottom: 1.6em;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.aboutme-edit {
+    font-size: 1rem;
+    margin: 0.7em 0 2.4em 0;
+}
+
+.aboutme-hide-img {
+    display: none;
+}
+
+/* end aboutme.html edit */
+
 /* Main Blog */
 
 .blog-container {
