@@ -170,7 +170,7 @@ main {
     border-radius: 50%;
 }
 
-.aboutme-edit {
+.aboutme-desc-edit {
     font-size: 1rem;
     margin: 0.7em 0 2.4em 0;
 }
@@ -309,10 +309,9 @@ footer {
 /* Media Queries */
 
 
-
 @media (min-width: 650px) {
 
-    /* Index.html media query */
+    /* index.html media query */
 
     .header-content {
         padding: 1.8em 3em;
@@ -377,19 +376,14 @@ footer {
 
     /* blog.html media query */
 
-
-
     .blog-page-edit {
         margin-top: 2em;
-
         padding: 0;
     }
 
     .blog-page-center {
         width: 80%;
         margin: 0 auto;
-
-
     }
 
     .hero-date,
@@ -423,5 +417,21 @@ footer {
     }
 
     /* blog.html end */
+
+
+    /* aboutme.html media query */
+
+    .aboutme-flex-container {
+        display: flex;
+        gap: 2em;
+    }
+
+    .aboutme-title-edit {
+        margin: 0;
+    }
+
+    /* .aboutme-desc-edit {} */
+
+    /* aboutme.html end */
 
 }
