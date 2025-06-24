@@ -307,12 +307,9 @@ footer {
 }
 
 /* Media Queries */
-
-
 @media (min-width: 650px) {
 
     /* index.html media query */
-
     .header-content {
         padding: 1.8em 3em;
     }
@@ -371,11 +368,15 @@ footer {
         margin: 3.5em 0;
     }
 
-    /* index.html end */
-
+    /* Shared styles for both blog.html and aboutme.html */
+    .hero-date,
+    .hero-text,
+    .hero-desc {
+        font-size: 1rem;
+        max-width: 1000px;
+    }
 
     /* blog.html media query */
-
     .blog-page-edit {
         margin-top: 2em;
         padding: 0;
@@ -384,11 +385,7 @@ footer {
     .blog-page-center {
         width: 80%;
         margin: 0 auto;
-    }
-
-    .hero-date,
-    .hero-text {
-        font-size: 1rem;
+        /* max-width: 1800px; */
     }
 
     .hero-desc-title {
@@ -416,14 +413,16 @@ footer {
         border-radius: 0.20em;
     }
 
-    /* blog.html end */
-
-
     /* aboutme.html media query */
-
     .aboutme-flex-container {
+        margin-top: 100em;
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 2em;
+        margin: 0 auto;
+        width: 90%;
+        /* max-width: 1800px; */
     }
 
     .aboutme-title-edit {
@@ -431,7 +430,5 @@ footer {
     }
 
     /* .aboutme-desc-edit {} */
-
-    /* aboutme.html end */
 
 }
