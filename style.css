@@ -200,7 +200,7 @@ main {
 
 .blog-image {
     width: 100%;
-    border-radius: 0.1875em;
+    border-radius: 0.3em;
     margin-bottom: 0.875em;
 }
 
@@ -243,6 +243,10 @@ main {
 
 .blog-three {
     grid-area: thr;
+}
+
+.extra-blog {
+    display: none;
 }
 
 .view-more-btn {
@@ -301,3 +305,72 @@ footer {
 .footer-text-copyright {
     color: #D7D7D7;
 }
+
+/* Media Queries */
+
+/* Index.html media query */
+
+@media (min-width: 650px) {
+
+    .header-content {
+        padding: 1.8em 3em;
+    }
+
+    .header-list {
+        font-size: 1rem;
+        gap: 2em;
+    }
+
+    .logo-img {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .hero-blog {
+        min-height: 480px;
+        padding: 0 0 3em 3em;
+        margin-bottom: 0.6em;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    .extra-blog {
+        display: block;
+    }
+
+    .blog-four {
+        grid-area: fou;
+    }
+
+    .blog-five {
+        grid-area: fiv;
+    }
+
+    .blog-six {
+        grid-area: six;
+    }
+
+    .blog-grid-container {
+
+        grid-template-columns: 1em repeat(3, 1fr) 1em;
+        grid-template-areas:
+            "... ... ... ... ..."
+            "... one two thr ..."
+            "... fou fiv six ...";
+        gap: 2.7em 1.5em;
+    }
+
+    .view-more-btn {
+        margin: 3.5em 0;
+    }
+
+
+}
+
+/* index.html end */
